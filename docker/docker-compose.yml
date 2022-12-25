@@ -1,15 +1,25 @@
 version: '3.7'
 
 services:
-  db-postgres:
+  notes-server-db:
     image: 'postgres:14.2-alpine'
-    container_name: db-postgres
+    container_name: notes-server-db
     ports:
       - 5432:5432
     environment:
       - POSTGRES_USER=root
       - POSTGRES_PASSWORD=root
       - POSTGRES_DB=notes-server
+
+  telegrambot-server-db:
+    image: 'postgres:14.2-alpine'
+    container_name: telegrambot-server-db
+    ports:
+      - 5433:5432
+    environment:
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=root
+      - POSTGRES_DB=telegrambot-server
 
   rabbit-mq:
     image: rabbitmq:3-management-alpine
