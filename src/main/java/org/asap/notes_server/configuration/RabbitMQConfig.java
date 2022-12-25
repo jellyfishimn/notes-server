@@ -1,4 +1,4 @@
-package org.asap.notesserver.configuration;
+package org.asap.notes_server.configuration;
 
 import org.springframework.amqp.core.*;
 import org.springframework.context.annotation.Bean;

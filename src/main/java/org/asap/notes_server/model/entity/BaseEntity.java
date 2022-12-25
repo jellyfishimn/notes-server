@@ -1,4 +1,4 @@
-package org.asap.notesserver.model.entity;
+package org.asap.notes_server.model.entity;
 
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
